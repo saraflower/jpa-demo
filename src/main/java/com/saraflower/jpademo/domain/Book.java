@@ -10,7 +10,6 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Book {
 
@@ -18,12 +17,20 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NonNull
     private String title;
-    @NonNull
     private String isbn;
-    @NonNull
     private String publisher;
-    @NonNull
     private Long price;
+
+    public Book(
+            String title,
+            String isbn,
+            String publisher,
+            Long price
+    ) {
+        this.title = title;
+        this.isbn = isbn;
+        this.publisher = publisher;
+        this.price = price;
+    }
 }
