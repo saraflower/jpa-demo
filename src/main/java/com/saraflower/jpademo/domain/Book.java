@@ -11,6 +11,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @RequiredArgsConstructor
+@EqualsAndHashCode(of = "id")
 public class Book {
 
     @Id
