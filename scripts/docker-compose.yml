@@ -1,0 +1,10 @@
+services:
+  maindb:
+    image: "mysql:latest"
+    ports:
+      - 3307:3306
+      - 33070:33060
+    volumes:
+      - $HOME/Data/jpa-demo-mysql:/var/lib/mysql
+    env_file:
+      - ../config/env.sh
