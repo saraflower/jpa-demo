@@ -20,7 +20,7 @@ public class MySQLIntegrationTest {
 
     @Test
     void testMySQL() {
-        long countBefore = bookRepo.count();
-        assertThat(countBefore).isEqualTo(2);
+        long count = bookRepo.count();
+        assertThat(count).isEqualTo(2);
     }
 }
