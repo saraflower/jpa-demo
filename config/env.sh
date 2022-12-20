@@ -1,4 +1,4 @@
-DB_URL=jdbc:mysql://localhost:3307/jpa-demo
-DB_USER=root
-DB_PASSWORD=testpw
-MYSQL_ROOT_PASSWORD=testpw
+DB_URL=jdbc:mysql://localhost:3307/bookdb
+DB_USER=book-admin
+DB_PASSWORD=password
+MYSQL_ROOT_PASSWORD=password
